@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transport Canada · Case Study — Anshika Agarwal</title>
+<title>Transport Canada · Case Study</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -351,8 +351,8 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
       <li><a href="#problem">Problem</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#artifacts">Artifacts</a></li>
-      <li><a href="#decisions">Decisions</a></li>
-      <li><a href="#metrics">Metrics</a></li>
+      <li><a href="#decisions">Key Findings</a></li>
+      <li><a href="#metrics">Recommendations</a></li>
       <li><a href="#impact">Impact</a></li>
     </ul>
   </div>
@@ -361,27 +361,68 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
 <!-- HERO -->
 <section class="hero">
   <div class="container hero-inner">
-    <p class="hero-eyebrow">Service Design & UX Research · Case Study</p>
-    <h1>Reimagining How a National<br>Transportation Agency <em>Listens</em><br>to the People It Serves</h1>
-    <p class="hero-desc">A 9-month engagement with the Federal Government of Canada — diagnosing a broken feedback ecosystem across 190+ citizen-facing services and designing a strategic path forward.</p>
+    <p class="hero-eyebrow">Service Design · UX Research · Government of Canada</p>
+    <h1>Diagnosing How a National<br>Transportation Agency <em>Hears</em><br>190+ Services Worth of Citizens</h1>
+    <p class="hero-desc">Brought in as a Service Designer on Transport Canada's <strong style="color:rgba(255,255,255,0.85)">oneTC</strong> digital transformation initiative - to audit how citizens could reach 190+ services, how many steps it took them to leave feedback, and why that feedback never made it back into the system.</p>
     <div class="hero-meta">
-      <span class="hero-tag"><strong>Role:</strong>&nbsp;Service Designer & UX Researcher</span>
+      <span class="hero-tag"><strong>Role:</strong>&nbsp;Service Designer</span>
       <span class="hero-div"></span>
-      <span class="hero-tag"><strong>Duration:</strong>&nbsp;Oct 2023 – Jun 2024</span>
+      <span class="hero-tag"><strong>Duration:</strong>&nbsp;Oct 2023 - Jun 2024</span>
       <span class="hero-div"></span>
-      <span class="hero-tag"><strong>Org:</strong>&nbsp;Federal Transportation Agency (NDA)</span>
+      <span class="hero-tag"><strong>Org:</strong>&nbsp;Transport Canada - oneTC Initiative</span>
+      <span class="hero-div"></span>
+      <span class="hero-tag"><strong>Deliverable:</strong>&nbsp;Recommendations approved by Executive Director</span>
     </div>
   </div>
 </section>
+
+<!-- VIDEO SECTION -->
+<div style="background:#0F1923;padding:48px 0 0;">
+  <div class="container" style="margin-bottom:24px;">
+    <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#CC0000;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:12px;">
+      <span style="display:block;width:32px;height:1px;background:#CC0000;"></span>
+      What is oneTC?
+    </p>
+    <p style="font-size:15px;color:rgba(255,255,255,0.45);max-width:640px;line-height:1.7;">This animation by blacmao illustrates Transport Canada's vision for the oneTC portal - the digital transformation initiative I was brought into as Service Designer. It captures the portal's goal: one login, one dashboard, unified services.</p>
+  </div>
+  <!-- Full-bleed video -->
+  <div style="width:100%;background:#000;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);">
+    <video
+      id="onetc-video"
+      muted
+      loop
+      playsinline
+      controls
+      style="width:100%;display:block;max-height:80vh;background:#000;"
+      title="oneTC Digital Portal - Transport Canada animation by blacmao">
+      <source src="onetc-video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+<script>
+  // Chrome autoplay fix — must set muted property via JS, not just the HTML attribute
+  (function() {
+    var v = document.getElementById('onetc-video');
+    if (!v) return;
+    v.muted = true;
+    var playAttempt = v.play();
+    if (playAttempt !== undefined) {
+      playAttempt.catch(function() {
+        // Autoplay blocked — show controls so user can start manually
+        v.controls = true;
+      });
+    }
+  })();
+</script>
 
 <!-- STATS -->
 <div class="stats-strip">
   <div class="container">
     <div class="stats-inner">
-      <div class="stat-cell"><div class="stat-num">190+</div><div class="stat-label"><strong>Services analyzed</strong>Full landscape mapped for the first time</div></div>
-      <div class="stat-cell"><div class="stat-num">8</div><div class="stat-label"><strong>Co-design sessions</strong>Cross-functional alignment built in</div></div>
-      <div class="stat-cell"><div class="stat-num">6–8</div><div class="stat-label"><strong>Participants per session</strong>Program officers, IT architects, policy staff</div></div>
-      <div class="stat-cell"><div class="stat-num">1</div><div class="stat-label"><strong>Executive presentation</strong>Recommendations approved dept-wide</div></div>
+      <div class="stat-cell"><div class="stat-num">190+</div><div class="stat-label"><strong>Services audited</strong>Full landscape catalogued for the first time - feedback method, navigation path, and contact channel for every service</div></div>
+      <div class="stat-cell"><div class="stat-num">4-6</div><div class="stat-label"><strong>Avg. clicks to reach contact</strong>Users had to navigate Canada.ca → TC → Program → Sub-program → Service → "Need Help" just to find an email</div></div>
+      <div class="stat-cell"><div class="stat-num">67</div><div class="stat-label"><strong>Services with footer-only contact</strong>No email, no phone - just a generic "Contact Us" link buried at the bottom of every page</div></div>
+      <div class="stat-cell"><div class="stat-num">1</div><div class="stat-label"><strong>Person reviewing all feedback</strong>The entire TC feedback intake relied on a single team member manually triaging tickets with no triage logic, taxonomy, or escalation path</div></div>
     </div>
   </div>
 </div>
@@ -389,11 +430,11 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
 <!-- OVERVIEW BAR -->
 <div class="overview-bar">
   <div class="overview-grid">
-    <div class="overview-cell"><div class="overview-key">Methods</div><div class="overview-val">Quantitative analysis, co-design, env. scan, SWOT, journey mapping, personas</div></div>
-    <div class="overview-cell"><div class="overview-key">Tools</div><div class="overview-val">Miro, Figma, Microsoft PowerPoint, collaborative whiteboarding</div></div>
-    <div class="overview-cell"><div class="overview-key">Deliverable</div><div class="overview-val">Strategic recommendations report → Executive Director</div></div>
-    <div class="overview-cell"><div class="overview-key">Outcome</div><div class="overview-val">Department-wide buy-in for redesigned feedback strategy</div></div>
-    <div class="overview-cell"><div class="overview-key">Contributions</div><div class="overview-val">Led all research end-to-end · Delivered strategic recommendations to Executive Director via PowerPoint presentation · Iconography + form components added to oneTC design system</div></div>
+    <div class="overview-cell"><div class="overview-key">Methods</div><div class="overview-val">Navigation click-path analysis · Service landscape audit · Environmental scan · SWOT analysis · Cognitive bias mapping · Presentation to Executive Director</div></div>
+    <div class="overview-cell"><div class="overview-key">Tools</div><div class="overview-val">Excel (service inventory &amp; click-path data) · Miro (SWOT, bias mapping, documentation) · PowerPoint (ED presentation)</div></div>
+    <div class="overview-cell"><div class="overview-key">Deliverable</div><div class="overview-val">Strategic recommendations presented to the Executive Director - approved and incorporated into oneTC's sprint planning</div></div>
+    <div class="overview-cell"><div class="overview-key">Outcome</div><div class="overview-val">Department-wide buy-in for a standardized feedback strategy · piloted with TSC and Civil Aviation National Service Centre · recommendations folded into the June 2024 SDSC roadmap</div></div>
+    <div class="overview-cell"><div class="overview-key">My Contribution</div><div class="overview-val">Sole researcher - led the full audit end-to-end · produced the Excel data analysis · facilitated the Miro documentation · authored and delivered the ED presentation · iconography added to oneTC design system</div></div>
   </div>
 </div>
 
@@ -401,29 +442,29 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
 <section class="section" id="problem">
   <div class="container">
     <p class="section-eyebrow"><span class="section-num">01</span>The Problem</p>
-    <h2 class="section-title">A platform serving 190+ services had no reliable way to learn if those services were working</h2>
-    <p class="section-sub">Canada's federal transportation sector runs over 190 citizen-facing services. But the agency's digital platform, oneTC, had a critical blind spot: its client feedback mechanism was fragmented, inconsistent, and not being used to drive improvement decisions.</p>
+    <h2 class="section-title">190+ citizen services. One person reviewing feedback manually. Zero loop back into the system.</h2>
+    <p class="section-sub">oneTC is Transport Canada's whole-of-government digital transformation initiative - the platform meant to unify 190+ citizen-facing services under one coherent experience. But before TC could make those services better, it had a more fundamental problem: it had no reliable way to hear what citizens thought about them.</p>
     <div style="display:grid;grid-template-columns:3fr 2fr;gap:48px;align-items:start;">
       <div>
         <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
-          <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:18px 20px;font-size:14px;color:var(--mid);line-height:1.65;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;"><span style="color:var(--teal);font-weight:700;">→</span><span>Feedback collected in isolated pockets — no shared taxonomy, no synthesis loop connecting frontline input to program leads</span></div>
-          <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:18px 20px;font-size:14px;color:var(--mid);line-height:1.65;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;"><span style="color:var(--teal);font-weight:700;">→</span><span>No common standard for what 'good feedback' even looked like across 190+ service lines</span></div>
-          <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:18px 20px;font-size:14px;color:var(--mid);line-height:1.65;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;"><span style="color:var(--teal);font-weight:700;">→</span><span>Service teams making design decisions in the dark, without access to collected user signal</span></div>
-          <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:18px 20px;font-size:14px;color:var(--mid);line-height:1.65;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;"><span style="color:var(--teal);font-weight:700;">→</span><span>GCKey and myTC operated independently — users had to create accounts twice with no linking mechanism</span></div>
+          <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:18px 20px;font-size:14px;color:var(--mid);line-height:1.65;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;"><span style="color:var(--teal);font-weight:700;">→</span><span><strong style="color:var(--dark)">The feedback bottleneck:</strong> All citizen feedback across 190+ services funnelled to one team member who manually reviewed tickets with no triage system, no taxonomy, and no defined escalation path. Feedback sat - or was discarded.</span></div>
+          <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:18px 20px;font-size:14px;color:var(--mid);line-height:1.65;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;"><span style="color:var(--teal);font-weight:700;">→</span><span><strong style="color:var(--dark)">Buried access points:</strong> My navigation analysis showed users needed 4-6 clicks minimum to reach a contact method - and 67 services offered only a generic footer link, no email or phone at all.</span></div>
+          <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:18px 20px;font-size:14px;color:var(--mid);line-height:1.65;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;"><span style="color:var(--teal);font-weight:700;">→</span><span><strong style="color:var(--dark)">Inconsistent channels:</strong> 73 services had an email, 60 had a phone number, but most had different contacts per service - no standard. Some social media links in the footer were broken entirely.</span></div>
+          <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:18px 20px;font-size:14px;color:var(--mid);line-height:1.65;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;"><span style="color:var(--teal);font-weight:700;">→</span><span><strong style="color:var(--dark)">No implementation path:</strong> Even when feedback was collected, there was no system to ingest it into active sprints or influence design decisions department-wide. The feedback loop was broken at every stage.</span></div>
         </div>
         <div class="pull-quote" style="margin-top:0;">
-          <p>"Services require direct enrollment through the service team in the present state — there's no unified account management and no way to connect what one service knows about a user to another service they're trying to access."</p>
-          <cite>— Synthesized from cross-team working group session, November 2023</cite>
+          <p>"TC's current disjointed feedback strategy can cause clients to have negative biases toward the department - and those biases compound over time when experiences don't improve."</p>
+          <cite> From the Feedback Methods for oneTC presentation, delivered to Executive Director, 2024</cite>
         </div>
       </div>
       <div>
         <div style="background:white;border:1px solid var(--border);border-radius:14px;padding:32px;">
-          <p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;">Core Problem Space</p>
+          <p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;">TC Service Landscape (SDSC, June 2024)</p>
           <div style="display:flex;flex-direction:column;gap:12px;">
-            <div style="background:var(--warn-bg);border:1px solid #F5C6C2;border-radius:10px;padding:16px 18px;"><div style="font-size:13px;font-weight:600;color:var(--warn);margin-bottom:4px;">Fragmented Collection</div><div style="font-size:12px;color:var(--mid);">No consistent format across 190+ services</div></div>
-            <div style="background:var(--amber-bg);border:1px solid #FAD9B8;border-radius:10px;padding:16px 18px;"><div style="font-size:13px;font-weight:600;color:var(--amber);margin-bottom:4px;">No Synthesis Loop</div><div style="font-size:12px;color:var(--mid);">Feedback collected but never routed to decision-makers</div></div>
-            <div style="background:var(--blue-bg);border:1px solid #BDD5F5;border-radius:10px;padding:16px 18px;"><div style="font-size:13px;font-weight:600;color:var(--blue);margin-bottom:4px;">No Shared Taxonomy</div><div style="font-size:12px;color:var(--mid);">Incompatible categorization blocked cross-service patterns</div></div>
-            <div style="background:var(--purple-bg);border:1px solid #C9BCF0;border-radius:10px;padding:16px 18px;"><div style="font-size:13px;font-weight:600;color:var(--purple);margin-bottom:4px;">Role Ambiguity</div><div style="font-size:12px;color:var(--mid);">No clarity on who collects, synthesizes, or acts on feedback</div></div>
+            <div style="background:var(--warn-bg);border:1px solid #F5C6C2;border-radius:10px;padding:16px 18px;"><div style="font-size:13px;font-weight:600;color:var(--warn);margin-bottom:4px;">13% fully online</div><div style="font-size:12px;color:var(--mid);">Only 13% of TC services are fully available online</div></div>
+            <div style="background:var(--amber-bg);border:1px solid #FAD9B8;border-radius:10px;padding:16px 18px;"><div style="font-size:13px;font-weight:600;color:var(--amber);margin-bottom:4px;">55% have no plan to go online</div><div style="font-size:12px;color:var(--mid);">Over half have no roadmap for digital delivery</div></div>
+            <div style="background:var(--blue-bg);border:1px solid #BDD5F5;border-radius:10px;padding:16px 18px;"><div style="font-size:13px;font-weight:600;color:var(--blue);margin-bottom:4px;">290 toll-free phone numbers</div><div style="font-size:12px;color:var(--mid);">Fragmented support - no consolidation, no shared intake</div></div>
+            <div style="background:var(--purple-bg);border:1px solid #C9BCF0;border-radius:10px;padding:16px 18px;"><div style="font-size:13px;font-weight:600;color:var(--purple);margin-bottom:4px;">43% service standards with no data</div><div style="font-size:12px;color:var(--mid);">Nearly half of TC services have no performance measurement at all</div></div>
           </div>
         </div>
       </div>
@@ -435,15 +476,15 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
 <section class="section" id="research">
   <div class="container">
     <p class="section-eyebrow"><span class="section-num">02</span>The Research</p>
-    <h2 class="section-title">Understanding the landscape through both scale and depth</h2>
-    <p class="section-sub">The core research question wasn't just 'what's broken' — it was 'what's systemically broken across hundreds of services and dozens of teams.' That required a mixed-methods approach from the start.</p>
+    <h2 class="section-title">Four methods. One question: how does a citizen actually reach Transport Canada - and does TC even hear them?</h2>
+    <p class="section-sub">This wasn't a research project about what to build. It was about diagnosing a system before recommending how to fix it. I needed to understand every step a citizen took just to leave feedback - and what happened (or didn't) once they did.</p>
     <div class="method-grid">
-      <div class="method-card"><div class="method-icon">📊</div><div class="method-title">Quantitative Service Analysis</div><div class="method-body">Mapped the full landscape of 190+ TC services — cataloguing how client feedback was currently collected, stored, and acted upon. Revealed that most services had no formalized feedback loop at all.</div></div>
-      <div class="method-card amber"><div class="method-icon">🎨</div><div class="method-title">8 Co-Design Workshops</div><div class="method-body">Facilitated sessions with cross-functional TC employees (program officers, service leads, IT architects, policy staff). Active design workshops — not passive interviews — with wireframes and workflow diagrams captured live on Miro.</div></div>
-      <div class="method-card purple"><div class="method-icon">🔍</div><div class="method-title">Environmental Scan</div><div class="method-body">Examined how federal departments across Canada and internationally handled client feedback — including GCKey's MFA rollout, IRCC's standardized registration, and Canada's Digital Standards.</div></div>
-      <div class="method-card blue"><div class="method-icon">⚖️</div><div class="method-title">Comparative Analysis</div><div class="method-body">Cross-organization comparison matrix analyzing feedback mechanisms, account management standards, and synthesis approaches across Canadian federal departments and international examples.</div></div>
-      <div class="method-card green"><div class="method-icon">🗺️</div><div class="method-title">Journey Mapping</div><div class="method-body">Created current-state maps illustrating the feedback lifecycle across service types — visualizing where data entered the system and where it became invisible to decision-makers.</div></div>
-      <div class="method-card warn"><div class="method-icon">👤</div><div class="method-title">Persona Creation</div><div class="method-body">Developed user personas representing service staff, program managers, and external clients — grounding the recommendations in real-world use cases and friction points across different roles.</div></div>
+      <div class="method-card"><div class="method-icon">🗺️</div><div class="method-title">Navigation Click-Path Analysis</div><div class="method-body">For each of the 190+ services, I documented the full navigation path a user had to take to reach any form of contact - tracing every click from Canada.ca home to the point of feedback. Most required 4-6 steps; some services had no contact method at all above the footer. All findings captured in Excel.</div></div>
+      <div class="method-card amber"><div class="method-icon">📊</div><div class="method-title">Service Landscape Audit</div><div class="method-body">Catalogued all 190+ services by feedback method: email present (73), phone number present (60), footer contact only (67), no contact mentioned. Identified regional inconsistencies - different contact methods for the same service depending on province - and confirmed 5 shared social media channels with several broken links.</div></div>
+      <div class="method-card purple"><div class="method-icon">🌐</div><div class="method-title">Environmental Scan</div><div class="method-body">Researched how comparable organizations handle feedback collection - including US healthcare.gov (direct "Connect with Us" in footer), UK GOV.UK (structured categorized feedback per service), and Canadian banks (RBC, TD) which use in-app prompts and post-service micro-surveys. Also studied how other Canadian federal departments (IRCC, CRA) manage feedback channels.</div></div>
+      <div class="method-card blue"><div class="method-icon">⚖️</div><div class="method-title">SWOT Analysis</div><div class="method-body">Synthesized a full SWOT specifically for TC's feedback ecosystem - grounding each point in the audit data. Documented on a Miro board along with a cognitive bias analysis: identifying which biases (information bias, negativity bias, sunk cost fallacy) TC's broken feedback system was actively triggering in citizens and how to design against them.</div></div>
+      <div class="method-card green"><div class="method-icon">🧠</div><div class="method-title">Cognitive Bias Mapping</div><div class="method-body">A unique layer of the research: mapped three cognitive biases that TC's current fragmented strategy was creating - Information Bias (users seeking info that can't affect outcomes), Negativity Bias (bad experiences leaving bigger impressions than good ones), and Sunk Cost Fallacy (resources invested in channels that produce no useful signal). Documented on Miro with design implications for each.</div></div>
+      <div class="method-card warn"><div class="method-icon">📋</div><div class="method-title">Recommendations Deck for Executive Director</div><div class="method-body">Consolidated all findings into a structured presentation delivered directly to the Executive Director. The deck translated audit data into short-term quick wins and a long-term TC-wide feedback strategy. The recommendations were approved and fed into the oneTC SDSC roadmap for June 2024 sprint planning.</div></div>
     </div>
   </div>
 </section>
@@ -452,326 +493,193 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
 <section class="section" id="artifacts">
   <div class="container">
     <p class="section-eyebrow"><span class="section-num">↗</span>Research Artifacts</p>
-    <h2 class="section-title">Explore the deliverables</h2>
-    <p class="section-sub">Interactive artifacts produced during the research and synthesis phases — pain point mapping, user personas, journey maps, proposed flows, research synthesis, environmental scan, and SWOT analysis.</p>
+    <h2 class="section-title">From raw data to executive recommendations</h2>
+    <p class="section-sub">Each artifact built on the last - from the granular Excel data on individual services to the strategic SWOT and cognitive bias work, through to the final recommendations approved department-wide.</p>
 
-    <!-- ARTIFACT 01: PAIN POINT MAP -->
+    <!-- ARTIFACT 01: NAVIGATION ANALYSIS -->
     <div class="artifact-spacer">
-      <div class="artifact-label">Artifact 01 · Current-State Analysis</div>
-      <div class="artifact-title">Pain Point Map: The Existing Service Request Form</div>
-      <div class="artifact-desc">Annotated analysis of the current oneTC service contact form — showing the cognitive overload users face when trying to access transportation services. Based on working group session observations (Nov 2023).</div>
+      <div class="artifact-label">Artifact 01 · Navigation Click-Path Analysis</div>
+      <div class="artifact-title">How many steps does it take a citizen to reach Transport Canada?</div>
+      <div class="artifact-desc">For every service in the 190+ inventory, I traced the exact navigation path a user had to take from Canada.ca home to any feedback or contact point. The data revealed a consistent pattern: contact was buried deep, inconsistently placed, and in 67 cases - not present at all above the footer.</div>
       <div class="pain-map">
-        <div class="pain-map-header"><strong>oneTC · Service Request Form · Current State</strong><span>— Annotated for UX issues</span></div>
+        <div class="pain-map-header"><strong>Navigation Click-Path Examples · Excerpted from Excel Audit</strong><span> Documented across 190+ services</span></div>
         <div class="pain-map-body">
           <div class="pain-map-legend">
-            <div class="legend-item"><div class="legend-dot" style="background:var(--warn)"></div>Critical friction</div>
-            <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>Moderate issue</div>
-            <div class="legend-item"><div class="legend-dot" style="background:var(--teal)"></div>Opportunity area</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--warn)"></div>56 clicks to contact (critical)</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>34 clicks (moderate)</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--teal)"></div>Footer only - no path at all</div>
           </div>
-          <div class="form-section-label">Section: Accessibility</div>
-          <div class="form-mock">
-            <div class="form-row pain-low">
-              <div class="form-row-content">
-                <div class="form-row-label">Please describe any accessibility issues that need accommodation during a call</div>
-                <div class="form-row-sub">Open text field</div>
-                <div class="annotation"><span class="annotation-icon">✓</span>Good inclusion of accessibility. However, not prominent enough — buried at top of form. Users with accessibility needs may miss this field.</div>
-              </div>
-              <div class="pain-badge badge-low">Opportunity</div>
-            </div>
-          </div>
-          <div class="form-section-label">Section: Service Selection</div>
+          <div class="form-section-label">Civil Aviation - Aircraft Certification</div>
           <div class="form-mock">
             <div class="form-row pain-high">
               <div class="form-row-content">
-                <div class="form-row-label">How can we help you? Please select all that apply. <span style="color:var(--warn)">(required)</span></div>
-                <div class="form-row-sub">9 services listed as expandable rows — Employment Insurance, CPP/CPPD/OAS/GIS, SIN, Passport Services, Veterans Affairs, Ukraine immigration, GCOS, ROE Web, Canadian Dental Care Plan</div>
-                <div class="annotation"><span class="annotation-icon">⚠️</span>Cognitive overload: 9 unrelated services presented with no grouping or categorization. Users must read every option to find what's relevant — "services not relevant to me should not be present" (Workshop, Nov 2023).</div>
-                <div class="annotation" style="margin-top:6px"><span class="annotation-icon">⚠️</span>No personalization layer — same list shown to every user regardless of their profile, history, or mode (Civil Aviation vs Marine vs Rail).</div>
-                <div class="annotation" style="margin-top:6px"><span class="annotation-icon">⚠️</span>Unclear information hierarchy: CPP/CPPD/OAS/GIS label is 82 characters — extreme cognitive load for a single checkbox label.</div>
+                <div class="form-row-label">Request a Part Design Approval for an Aeronautical Product</div>
+                <div class="form-row-sub">Canada.ca → Transport Canada → Aviation → Aircraft airworthiness → Aircraft certification → Need Help</div>
+                <div class="annotation"><span class="annotation-icon">⚠️</span>6 clicks to reach contact. Email: services@tc.gc.ca · Phone: 1-800-305-2059. Contact exists but is buried 6 levels deep - the "Need Help" label is the only indicator.</div>
               </div>
-              <div class="pain-badge badge-high">Critical</div>
+              <div class="pain-badge badge-high">6 clicks</div>
+            </div>
+            <div class="form-row pain-high">
+              <div class="form-row-content">
+                <div class="form-row-label">Ministerial Exemption under Subsection 5.9(2) of the Aeronautics Act</div>
+                <div class="form-row-sub">laws-lois.justice.gc.ca → section 5.9 - links out to a separate government legal site</div>
+                <div class="annotation"><span class="annotation-icon">⚠️</span>No contact method present on the TC page. Footer only. A citizen looking for help with an active ministerial exemption has no way to reach the right person.</div>
+              </div>
+              <div class="pain-badge badge-high">Footer only</div>
             </div>
           </div>
-          <div class="form-section-label">Section: Additional Information</div>
+          <div class="form-section-label">Marine Safety - Vessel Services</div>
           <div class="form-mock">
             <div class="form-row pain-med">
               <div class="form-row-content">
-                <div class="form-row-label">Please provide as much detail as possible regarding your service request.</div>
-                <div class="form-row-sub">Large open textarea — no character count, no structured prompts</div>
-                <div class="annotation"><span class="annotation-icon">⚠️</span>Unstructured input creates inconsistent data quality. Without structured fields, feedback cannot be synthesized or categorized across services — this is the core gap in TC's feedback mechanism.</div>
+                <div class="form-row-label">Pleasure Craft Licence</div>
+                <div class="form-row-sub">Canada.ca → Transport Canada → Marine transportation → Vessel licensing and registration → Licensing a pleasure craft → Apply for or manage a Pleasure Craft Licence (PCL)</div>
+                <div class="annotation"><span class="annotation-icon">⚠️</span>5 clicks. Email: obs-bsn@tc.gc.ca · Phone: 1-800-267-6687. A common citizen request buried 5 layers deep.</div>
               </div>
-              <div class="pain-badge badge-med">Moderate</div>
+              <div class="pain-badge badge-med">5 clicks</div>
             </div>
             <div class="form-row pain-high">
               <div class="form-row-content">
-                <div class="form-row-label">No confirmation of what happens next after Submit</div>
-                <div class="form-row-sub">No service routing logic, no expected timeline, no ticket reference</div>
-                <div class="annotation"><span class="annotation-icon">⚠️</span>Form submits into a black box. Working group noted: "There are services which require enrollment through service team in present state" — users have no visibility into routing or status.</div>
+                <div class="form-row-label">Continuous Synopsis Records · Safe Manning Document Review · International Marine Organization Exemptions (multiple services)</div>
+                <div class="form-row-sub">Canada.ca → Transport Canada → Marine transportation [ends here]</div>
+                <div class="annotation"><span class="annotation-icon">⚠️</span>Multiple marine services have no contact method above the footer - users land on the service page with no way to follow up.</div>
               </div>
-              <div class="pain-badge badge-high">Critical</div>
+              <div class="pain-badge badge-high">Footer only</div>
+            </div>
+          </div>
+          <div class="form-section-label">Aviation Security - Widely Shared Contact</div>
+          <div class="form-mock">
+            <div class="form-row pain-med">
+              <div class="form-row-content">
+                <div class="form-row-label">Air Cargo Screening Equipment Certification · Approval of Air Cargo Security Program Participants · EDDHT Certification</div>
+                <div class="form-row-sub">Canada.ca → Transport Canada → Programs [3 clicks shared across 3 services]</div>
+                <div class="annotation"><span class="annotation-icon">ℹ️</span>Three separate services share the same email (TC.aircargosecurity…@tc.gc.ca) and phone (1-866-375-7342) - a relatively consistent pattern, but still 3 clicks and no service-specific routing once contact is made.</div>
+              </div>
+              <div class="pain-badge badge-med">3 clicks</div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ARTIFACT 02: USER PERSONA -->
+    <!-- ARTIFACT 02: FEEDBACK METHOD BREAKDOWN -->
     <div class="artifact-spacer">
-      <div class="artifact-label">Artifact 02 · User Persona</div>
-      <div class="artifact-title">Maya — Aspiring Commercial Pilot</div>
-      <div class="artifact-desc">Composite persona synthesized from co-design session discussions about Civil Aviation users (Sessions 3–4, Nov 2023). Represents the primary user type most impacted by fragmented account management.</div>
-      <div class="persona-card">
-        <div class="persona-sidebar">
-          <div class="persona-avatar">✈️</div>
-          <div class="persona-name">Maya Chen</div>
-          <div class="persona-role">Aspiring Commercial Pilot · Civil Aviation</div>
-          <div class="persona-stat-block"><div class="persona-stat-label">Age</div><div class="persona-stat-value">28</div></div>
-          <div class="persona-stat-block"><div class="persona-stat-label">Location</div><div class="persona-stat-value">Vancouver, BC</div></div>
-          <div class="persona-stat-block"><div class="persona-stat-label">Tech Comfort</div><div class="persona-stat-value">Moderate — uses apps daily but expects government systems to be straightforward</div></div>
-          <div class="persona-stat-block"><div class="persona-stat-label">Services Used</div><div class="persona-stat-value">Pilot licence application, medical certification, CARS registration</div></div>
-          <div class="persona-stat-block"><div class="persona-stat-label">Account Status</div><div class="persona-stat-value">Has both a GCKey and myTC account — created separately, not linked</div></div>
+      <div class="artifact-label">Artifact 02 · Feedback Methods Audit</div>
+      <div class="artifact-title">How the 190+ services actually handle contact: a statistical breakdown</div>
+      <div class="artifact-desc">Beyond the navigation paths, I categorized every service by the feedback methods it offered. The pattern that emerged: inconsistency was the norm. No two services handled feedback the same way, and most offered no structured channel above the footer.</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px;">
+        <div style="background:white;border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;">
+          <div style="font-family:'DM Serif Display',serif;font-size:42px;color:var(--teal);line-height:1;margin-bottom:8px;">73</div>
+          <div style="font-size:13px;font-weight:600;color:var(--dark);margin-bottom:4px;">Email present</div>
+          <div style="font-size:12px;color:var(--gray);line-height:1.5;">But inconsistent - different addresses per sub-service, no shared inbox or taxonomy</div>
         </div>
-        <div class="persona-main">
-          <div class="persona-quote">"I just want to register my pilot's licence and check the status of my medical certification — why do I need three different logins to do that?"</div>
-          <div class="artifact-label">Goals</div>
-          <div class="tag-list" style="margin-bottom:24px">
-            <span class="tag goal">Renew pilot licence efficiently</span>
-            <span class="tag goal">See all TC services in one place</span>
-            <span class="tag goal">Understand application status without calling</span>
-            <span class="tag goal">Update credentials when they change</span>
-          </div>
-          <div class="persona-grid">
-            <div>
-              <div class="persona-section-title">Pain Points</div>
-              <div class="tag-list" style="margin-bottom:16px">
-                <span class="tag pain">Duplicate accounts</span>
-                <span class="tag pain">No linked credentials</span>
-                <span class="tag pain">Unclear next steps</span>
-                <span class="tag pain">Irrelevant services cluttering view</span>
-              </div>
-              <ul class="persona-bullet">
-                <li>Created 2 accounts when she forgot first login</li>
-                <li>Cannot update pilot licence number in her profile</li>
-                <li>Sees 9 services on every form — only 2 are relevant</li>
-                <li>Had to call service team to find application status</li>
-              </ul>
-            </div>
-            <div>
-              <div class="persona-section-title">Mental Model</div>
-              <ul class="persona-bullet">
-                <li>Expects single sign-on like her bank or airline apps</li>
-                <li>Thinks of herself as a "pilot" not a "Civil Aviation client"</li>
-                <li>Wants to customize her dashboard to show relevant services only</li>
-                <li>Trusts systems more when they remember her credentials</li>
-              </ul>
-              <div style="margin-top:16px">
-                <div class="persona-section-title">Frustration Level</div>
-                <div style="background:var(--light);border-radius:6px;height:8px;margin-top:8px"><div style="background:var(--warn);width:78%;height:8px;border-radius:6px"></div></div>
-                <div style="font-size:11px;color:var(--gray);margin-top:4px">High — 78/100</div>
-              </div>
-            </div>
-          </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;">
+          <div style="font-family:'DM Serif Display',serif;font-size:42px;color:var(--amber);line-height:1;margin-bottom:8px;">60</div>
+          <div style="font-size:13px;font-weight:600;color:var(--dark);margin-bottom:4px;">Phone number present</div>
+          <div style="font-size:12px;color:var(--gray);line-height:1.5;">Ranging from generic 1-800 numbers to direct regional lines with no call routing</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;">
+          <div style="font-family:'DM Serif Display',serif;font-size:42px;color:var(--warn);line-height:1;margin-bottom:8px;">67</div>
+          <div style="font-size:13px;font-weight:600;color:var(--dark);margin-bottom:4px;">Footer-only contact</div>
+          <div style="font-size:12px;color:var(--gray);line-height:1.5;">No email, no phone, no direct path - just a generic "Contact Us" at the bottom of every page</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;">
+          <div style="font-family:'DM Serif Display',serif;font-size:42px;color:var(--purple);line-height:1;margin-bottom:8px;">5</div>
+          <div style="font-size:13px;font-weight:600;color:var(--dark);margin-bottom:4px;">Social media channels</div>
+          <div style="font-size:12px;color:var(--gray);line-height:1.5;">All shared via footer - several links were broken at time of audit; no service-specific routing</div>
         </div>
       </div>
-    </div>
-
-    <!-- ARTIFACT 03: JOURNEY MAP -->
-    <div class="artifact-spacer">
-      <div class="artifact-label">Artifact 03 · Journey Map</div>
-      <div class="artifact-title">Current-State: Registering for a TC Service</div>
-      <div class="artifact-desc">Maps the fragmented experience a user like Maya goes through to access a single TC service. Based on Session 3 (Nov 8) and Working Group discussion (Nov 14) — specifically the GCKey/myTC duplication problem and lack of self-serve enrollment.</div>
-      <div class="journey-wrap" style="overflow-x:auto">
-        <div style="min-width:900px">
-          <div class="journey-header-row">
-            <div class="journey-header-cell">Stage</div>
-            <div class="journey-header-cell">1. Discovers need</div>
-            <div class="journey-header-cell">2. Creates GCKey</div>
-            <div class="journey-header-cell">3. Creates myTC</div>
-            <div class="journey-header-cell">4. Finds form</div>
-            <div class="journey-header-cell">5. Submits & waits</div>
-          </div>
-          <div class="journey-row">
-            <div class="journey-row-label">Action</div>
-            <div class="journey-cell">Realizes needs to renew pilot licence. Searches TC website.</div>
-            <div class="journey-cell">Registers for GCKey — name, email, password, MFA setup.</div>
-            <div class="journey-cell pain">Discovers GCKey ≠ myTC. Must create a separate myTC account with different fields.</div>
-            <div class="journey-cell pain">Navigates through all 9 service categories to find Civil Aviation. Scans all options manually.</div>
-            <div class="journey-cell pain">Submits form with no confirmation, no ticket number, no timeline. Calls service team 3 days later.</div>
-          </div>
-          <div class="journey-row">
-            <div class="journey-row-label">Thinking</div>
-            <div class="journey-cell">"I just need to renew my licence — this should take 10 minutes."</div>
-            <div class="journey-cell">"OK this is standard. Fine."</div>
-            <div class="journey-cell pain">"Why do I need two accounts for the same government?"</div>
-            <div class="journey-cell pain">"Why is dental care on the same form as my pilot licence?"</div>
-            <div class="journey-cell pain">"Did that even go anywhere? I have no idea what happens next."</div>
-          </div>
-          <div class="journey-row">
-            <div class="journey-row-label">Emotion</div>
-            <div class="journey-cell">Neutral — hopeful<div class="emotion-bar emotion-mid"></div></div>
-            <div class="journey-cell">Neutral — routine<div class="emotion-bar emotion-mid"></div></div>
-            <div class="journey-cell pain">Confused — frustrated<div class="emotion-bar emotion-low"></div></div>
-            <div class="journey-cell pain">Overwhelmed<div class="emotion-bar emotion-low"></div></div>
-            <div class="journey-cell pain">Anxious — unsure<div class="emotion-bar emotion-low"></div></div>
-          </div>
-          <div class="journey-row">
-            <div class="journey-row-label">Pain Points</div>
-            <div class="journey-cell">Unclear which TC platform to use</div>
-            <div class="journey-cell">MFA setup on separate device adds friction</div>
-            <div class="journey-cell pain">⚠️ Duplicate account creation — GCKey & myTC operate independently with no linking</div>
-            <div class="journey-cell pain">⚠️ 9 unrelated services with no personalization or mode-filtering</div>
-            <div class="journey-cell pain">⚠️ No self-serve status tracking — must call support team</div>
-          </div>
-          <div class="journey-row">
-            <div class="journey-row-label">Opportunity</div>
-            <div class="journey-cell" style="background:var(--teal-bg)">Single entry point that routes based on user type</div>
-            <div class="journey-cell" style="background:var(--teal-bg)">Use existing GCKey as primary authenticator</div>
-            <div class="journey-cell" style="background:var(--teal-bg)">Single linked account with role-based profile</div>
-            <div class="journey-cell" style="background:var(--teal-bg)">Personalized dashboard showing only relevant services by mode</div>
-            <div class="journey-cell" style="background:var(--teal-bg)">In-app status tracking with notification on change</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ARTIFACT 04: PROPOSED FLOW -->
-    <div class="artifact-spacer">
-      <div class="artifact-label">Artifact 04 · Proposed Account Flow Wireframe</div>
-      <div class="artifact-title">Simplified Single Sign-On: From Login to Relevant Services</div>
-      <div class="artifact-desc">Proposed flow synthesized from Sessions 3–5 — specifically CivAv workflow, mode-based grouping suggestion, and the group consensus on single ID with role-based service access.</div>
-      <div class="flow-wrap">
-        <div style="margin-bottom:40px">
-          <div style="font-size:11px;font-weight:700;color:var(--warn);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;font-family:'JetBrains Mono',monospace;">Current State — Fragmented</div>
-          <div class="flow-diagram">
-            <div class="flow-step"><div class="flow-node start"><div class="flow-node-icon">👤</div><div class="flow-node-label">User needs TC service</div></div></div>
-            <div class="flow-step"><div class="flow-node" style="border-color:var(--warn);background:var(--warn-bg)"><div class="flow-node-icon">🔑</div><div class="flow-node-label">Create GCKey account</div></div></div>
-            <div class="flow-step"><div class="flow-node" style="border-color:var(--warn);background:var(--warn-bg)"><div class="flow-node-icon">🔑</div><div class="flow-node-label">Create separate myTC account</div></div><div class="flow-note" style="color:var(--warn)">⚠️ Not linked to GCKey</div></div>
-            <div class="flow-step"><div class="flow-node" style="border-color:var(--warn);background:var(--warn-bg)"><div class="flow-node-icon">📋</div><div class="flow-node-label">Browse all 9+ services manually</div></div><div class="flow-note" style="color:var(--warn)">⚠️ No personalization</div></div>
-            <div class="flow-step"><div class="flow-node" style="border-color:var(--warn);background:var(--warn-bg)"><div class="flow-node-icon">📝</div><div class="flow-node-label">Submit form — no status tracking</div></div><div class="flow-note" style="color:var(--warn)">⚠️ Must call to follow up</div></div>
-            <div class="flow-step"><div class="flow-node" style="border-color:var(--warn);background:var(--warn-bg)"><div class="flow-node-icon">📞</div><div class="flow-node-label">Service team manually processes</div></div></div>
-          </div>
-        </div>
-        <div style="border-top:2px dashed var(--border);margin-bottom:40px"></div>
+      <div style="background:var(--warn-bg);border:1px solid #F5C6C2;border-radius:14px;padding:28px 32px;margin-bottom:24px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;">
+        <div style="font-size:28px;">🚨</div>
         <div>
-          <div style="font-size:11px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;font-family:'JetBrains Mono',monospace;">Proposed State — Unified & Personalized</div>
-          <div class="flow-diagram">
-            <div class="flow-step"><div class="flow-node start"><div class="flow-node-icon">👤</div><div class="flow-node-label">User needs TC service</div></div></div>
-            <div class="flow-step"><div class="flow-node improved"><div class="flow-node-icon">🔐</div><div class="flow-node-label">Login with GCKey (single auth)</div></div><div class="flow-note">One account. MFA included.</div></div>
-            <div class="flow-step"><div class="flow-node decision"><div class="flow-node-icon">⬦</div><div class="flow-node-label">Select mode: Personal / Business</div></div><div class="flow-note">Routes to relevant profile</div></div>
-            <div class="flow-step"><div class="flow-node improved"><div class="flow-node-icon">🎯</div><div class="flow-node-label">Personalized dashboard — relevant services only</div></div><div class="flow-note">CivAv pilot sees pilot services only</div></div>
-            <div class="flow-step"><div class="flow-node improved"><div class="flow-node-icon">📨</div><div class="flow-node-label">Submit with structured fields</div></div><div class="flow-note">Ticket # + expected timeline shown</div></div>
-            <div class="flow-step"><div class="flow-node end-node"><div class="flow-node-icon">✓</div><div class="flow-node-label">Self-serve status tracking in dashboard</div></div><div class="flow-note" style="color:var(--teal)">Notification on status change</div></div>
+          <div style="font-size:14px;font-weight:700;color:var(--warn);margin-bottom:8px;">The deeper problem: feedback collected, but never actioned</div>
+          <div style="font-size:14px;color:var(--mid);line-height:1.75;">Even when a citizen successfully navigated to a contact method and submitted feedback, it went into a black hole. One team member at TC was responsible for manually reviewing all incoming tickets across all services - with no triage logic, no taxonomy to categorize by service or issue type, no escalation path, and no mechanism to route insights back to program leads. The "feedback loop" ended at inbox receipt.</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="background:white;border:1px solid var(--border);border-radius:12px;padding:24px;">
+          <div style="font-size:11px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:2px;margin-bottom:14px;font-family:'JetBrains Mono',monospace;">What I observed</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="font-size:13px;color:var(--mid);line-height:1.65;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--warn);">→</span>Not all service pages have any contact email or phone number</div>
+            <div style="font-size:13px;color:var(--mid);line-height:1.65;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--warn);">→</span>Not all service pages encourage the reader to leave feedback</div>
+            <div style="font-size:13px;color:var(--mid);line-height:1.65;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--warn);">→</span>There are different ways to leave feedback by region - no national standard</div>
+            <div style="font-size:13px;color:var(--mid);line-height:1.65;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--warn);">→</span>Many services have different contacts for each sub-service within them</div>
+            <div style="font-size:13px;color:var(--mid);line-height:1.65;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--warn);">→</span>Some social media links in the footer are broken</div>
+            <div style="font-size:13px;color:var(--mid);line-height:1.65;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--warn);">→</span>No feedback link on the TC home page - only visible after selecting a certification path</div>
           </div>
         </div>
-        <div style="margin-top:40px;padding-top:32px;border-top:1px solid var(--border)">
-          <div style="font-size:11px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;font-family:'JetBrains Mono',monospace;">Key Design Decisions</div>
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
-            <div style="background:var(--light);border-radius:8px;padding:16px"><div style="font-size:12px;font-weight:700;color:var(--teal);margin-bottom:6px">Single Unique ID</div><div style="font-size:12px;color:var(--mid);line-height:1.6">System-generated TC identifier links GCKey to all service enrollments — eliminates duplicate accounts (Sessions 6 & 8)</div></div>
-            <div style="background:var(--light);border-radius:8px;padding:16px"><div style="font-size:12px;font-weight:700;color:var(--teal);margin-bottom:6px">Mode-Based Routing</div><div style="font-size:12px;color:var(--mid);line-height:1.6">Personal vs Business selection drives which services appear. Division based on roles, not service names (Sessions 4 & 5)</div></div>
-            <div style="background:var(--light);border-radius:8px;padding:16px"><div style="font-size:12px;font-weight:700;color:var(--teal);margin-bottom:6px">Generic at Base, Specific at Depth</div><div style="font-size:12px;color:var(--mid);line-height:1.6">Base registration collects minimal fields. Service-specific info collected only when enrolling in that service (Sessions 2 & 5)</div></div>
+        <div style="background:white;border:1px solid var(--border);border-radius:12px;padding:24px;">
+          <div style="font-size:11px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:2px;margin-bottom:14px;font-family:'JetBrains Mono',monospace;">Cognitive impact on citizens</div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="background:var(--blue-bg);border:1px solid #BDD5F5;border-radius:8px;padding:12px 14px;"><div style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:4px;">Information Bias</div><div style="font-size:12px;color:var(--mid);line-height:1.6;">Citizens seek additional information even when it can't change their outcome - poor service pages create unnecessary anxiety and calls to already-overloaded centres</div></div>
+            <div style="background:var(--warn-bg);border:1px solid #F5C6C2;border-radius:8px;padding:12px 14px;"><div style="font-size:12px;font-weight:600;color:var(--warn);margin-bottom:4px;">Negativity Bias</div><div style="font-size:12px;color:var(--mid);line-height:1.6;">Negative experiences leave a stronger cognitive imprint than positive ones - a broken link or dead-end navigation creates lasting distrust in TC services</div></div>
+            <div style="background:var(--amber-bg);border:1px solid #FAD9B8;border-radius:8px;padding:12px 14px;"><div style="font-size:12px;font-weight:600;color:var(--amber);margin-bottom:4px;">Sunk Cost Fallacy</div><div style="font-size:12px;color:var(--mid);line-height:1.6;">Resources invested in channels that produce no useful signal - TC continues operating feedback channels that no one is monitoring or acting on</div></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ARTIFACT 05: RESEARCH SYNTHESIS -->
+    <!-- ARTIFACT 03: ENVIRONMENTAL SCAN -->
     <div class="artifact-spacer">
-      <div class="artifact-label">Artifact 05 · Research Synthesis</div>
-      <div class="artifact-title">Thematic Clusters from 8 Co-Design Sessions</div>
-      <div class="artifact-desc">Key themes synthesized from co-design session notes (Nov–Dec 2023) and the oneTC Integrated Roadmap Working Group (Nov 14, 2023). Each cluster groups related pain points and opportunities raised by participants.</div>
-      <div class="synthesis-grid">
-        <div class="theme-cluster"><div class="cluster-header fragmented">⚡ Fragmented Identity System</div><div class="cluster-body"><div class="sticky-note">GCKey and myTC work independently — users must create accounts twice with no linking mechanism<div class="sticky-source">Session 1 · Nov 2</div></div><div class="sticky-note blue">Sometimes people forget credentials and create duplicate accounts — causes confusion for TC staff and document redundancy<div class="sticky-source">Session 6 · Nov 23</div></div><div class="sticky-note">Is account duplication a cause of worry or priority right now? There are different sign-ons per service<div class="sticky-source">Session 6 · Nov 23</div></div></div></div>
-        <div class="theme-cluster"><div class="cluster-header cognitive">🧠 Cognitive Overload</div><div class="cluster-body"><div class="sticky-note pink">Difficulty wrapping head around all services on one screen — how to reduce cognitive overload?<div class="sticky-source">Session 1 · </div></div><div class="sticky-note">Services not relevant to me should not be present on portal<div class="sticky-source">Session 1 · </div></div><div class="sticky-note blue">Keep things as generic as possible — the idea is not to overwhelm the user but make onboarding easy<div class="sticky-source">Session 4 </div></div></div></div>
-        <div class="theme-cluster"><div class="cluster-header account">🔑 Account Management Gaps</div><div class="cluster-body"><div class="sticky-note">How do we update names when someone gets married? Can't change credentials in current state<div class="sticky-source">Session 1 · </div></div><div class="sticky-note blue">Pilot's licence number was entered but not stored — transient data by design, serious security concern<div class="sticky-source">Session 3 </div></div><div class="sticky-note green">Changes made to account → notification sent → "Is it you?" — Google and Amazon do this<div class="sticky-source">Session 1 </div></div></div></div>
-        <div class="theme-cluster"><div class="cluster-header personalization">🎯 Personalization & Self-Serve</div><div class="cluster-body"><div class="sticky-note green">Customization approach: users select which services they want and add to profile as they progress<div class="sticky-source">Session 1 · Anshika</div></div><div class="sticky-note">User should be able to seamlessly access services under different modes — pilot one day, boat registration next<div class="sticky-source">Session 4 </div></div><div class="sticky-note blue">Role selection under personal and business — can have multiple roles under one account<div class="sticky-source">Session 5 </div></div></div></div>
-        <div class="theme-cluster"><div class="cluster-header security">🔒 Security & Verification</div><div class="cluster-body"><div class="sticky-note">Code sent to phone for MFA — but what about people without cell phones?<div class="sticky-source">Session 1</div></div><div class="sticky-note pink">Verification needs to take place — is data correct and valid? Hesitation about centralized storage<div class="sticky-source">Session 3 </div></div><div class="sticky-note">Don't mix personal and work business accounts — should be two different entities<div class="sticky-source">Sessions 2 & 3 </div></div></div></div>
-        <div class="theme-cluster"><div class="cluster-header standardize">📐 Standardization Opportunity</div><div class="cluster-body"><div class="sticky-note green">How do we connect all services? Onboarding should have it but is not necessary<div class="sticky-source">Session 1</div></div><div class="sticky-note">Centralizing — hierarchy or grouping that makes sense, based on user mental model not service names<div class="sticky-source">Session 2 ·</div></div><div class="sticky-note blue">Alpha Design System (digital.canada.ca) — reference for standardized govt field patterns<div class="sticky-source">Session 5 </div></div></div></div>
-      </div>
-      <!-- Session timeline -->
-      <div style="margin-top:40px;background:white;border:1px solid var(--border);border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,.04)">
-        <div style="font-size:11px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;font-family:'JetBrains Mono',monospace">Research Timeline — 8 Co-Design Sessions</div>
-        <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:0;position:relative">
-          <div style="position:absolute;top:16px;left:0;right:0;height:2px;background:var(--teal-mid);z-index:0"></div>
-          <div style="text-align:center;padding:0 4px;position:relative;z-index:1"><div style="width:32px;height:32px;border-radius:50%;background:var(--teal);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin:0 auto 8px">1</div><div style="font-size:10px;color:var(--gray);line-height:1.4">Nov 2<br>Account Mgmt<br>Pain Points</div></div>
-          <div style="text-align:center;padding:0 4px;position:relative;z-index:1"><div style="width:32px;height:32px;border-radius:50%;background:var(--teal);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin:0 auto 8px">2</div><div style="font-size:10px;color:var(--gray);line-height:1.4">Nov 6<br>PT&L Workflow<br>Grouping Logic</div></div>
-          <div style="text-align:center;padding:0 4px;position:relative;z-index:1"><div style="width:32px;height:32px;border-radius:50%;background:var(--teal);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin:0 auto 8px">3</div><div style="font-size:10px;color:var(--gray);line-height:1.4">Nov 8<br>Registration Types<br>Credential Storage</div></div>
-          <div style="text-align:center;padding:0 4px;position:relative;z-index:1"><div style="width:32px;height:32px;border-radius:50%;background:var(--teal);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin:0 auto 8px">4</div><div style="font-size:10px;color:var(--gray);line-height:1.4">Nov 10<br>CivAv Workflow<br>Mode Selection</div></div>
-          <div style="text-align:center;padding:0 4px;position:relative;z-index:1"><div style="width:32px;height:32px;border-radius:50%;background:var(--teal-lt);color:white;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin:0 auto 8px">WG</div><div style="font-size:10px;color:var(--gray);line-height:1.4">Nov 14<br>Integrated Roadmap<br>Working Group</div></div>
-          <div style="text-align:center;padding:0 4px;position:relative;z-index:1"><div style="width:32px;height:32px;border-radius:50%;background:var(--teal);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin:0 auto 8px">5</div><div style="font-size:10px;color:var(--gray);line-height:1.4">Nov 21<br>Field Finalization<br>Data Storage</div></div>
-          <div style="text-align:center;padding:0 4px;position:relative;z-index:1"><div style="width:32px;height:32px;border-radius:50%;background:var(--teal);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin:0 auto 8px">6</div><div style="font-size:10px;color:var(--gray);line-height:1.4">Nov 23<br>Verification<br>Duplication Issues</div></div>
-          <div style="text-align:center;padding:0 4px;position:relative;z-index:1"><div style="width:32px;height:32px;border-radius:50%;background:var(--teal);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin:0 auto 8px">7</div><div style="font-size:10px;color:var(--gray);line-height:1.4">Nov 28<br>Account Recovery<br>Business Profile</div></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ARTIFACT 06: ENVIRONMENTAL SCAN -->
-    <div class="artifact-spacer">
-      <div class="artifact-label">Artifact 06 · Environmental Scan</div>
-      <div class="artifact-title">How comparable organizations handle digital identity & client feedback</div>
-      <div class="artifact-desc">Comparative analysis of federal government departments across Canada and reference organizations — examining login, account management, service personalization, and feedback collection approaches. Used to benchmark TC's current state and ground recommendations in proven practice.</div>
+      <div class="artifact-label">Artifact 03 · Environmental Scan</div>
+      <div class="artifact-title">How does TC's feedback compare to US, UK, and Canadian banks?</div>
+      <div class="artifact-desc">I scanned comparable organizations to understand what effective feedback collection looks like - from US federal health services to GOV.UK to Canadian banking apps. The findings grounded my recommendations in proven patterns, not speculation.</div>
       <div class="scan-intro">
-        <div class="scan-stat"><div class="scan-stat-num">6</div><div class="scan-stat-label">Organizations reviewed</div></div>
-        <div class="scan-stat"><div class="scan-stat-num">4</div><div class="scan-stat-label">Key capability dimensions</div></div>
-        <div class="scan-stat"><div class="scan-stat-num">190+</div><div class="scan-stat-label">TC services mapped as baseline</div></div>
-        <div class="scan-stat"><div class="scan-stat-num">3</div><div class="scan-stat-label">Priority gaps identified</div></div>
+        <div class="scan-stat"><div class="scan-stat-num">4</div><div class="scan-stat-label">Organization types compared</div></div>
+        <div class="scan-stat"><div class="scan-stat-num">3</div><div class="scan-stat-label">Countries examined</div></div>
+        <div class="scan-stat"><div class="scan-stat-num">4</div><div class="scan-stat-label">Feedback dimensions mapped</div></div>
+        <div class="scan-stat"><div class="scan-stat-num">3</div><div class="scan-stat-label">Quick wins identified</div></div>
       </div>
       <div class="scan-table">
         <div class="scan-table-header">
           <div class="scan-th">Dimension</div>
           <div class="scan-th">🇨🇦 TC · oneTC<br><span style="font-size:10px;opacity:.6;font-weight:400">Current State</span></div>
-          <div class="scan-th">🇨🇦 GCKey / IRCC<br><span style="font-size:10px;opacity:.6;font-weight:400">Federal Standard</span></div>
-          <div class="scan-th">🏦 Canadian Banks<br><span style="font-size:10px;opacity:.6;font-weight:400">e.g. RBC, TD</span></div>
-          <div class="scan-th">🌐 International Gov<br><span style="font-size:10px;opacity:.6;font-weight:400">GOV.UK equivalent</span></div>
+          <div class="scan-th">🇺🇸 US healthcare.gov<br><span style="font-size:10px;opacity:.6;font-weight:400">Federal Health Services</span></div>
+          <div class="scan-th">🇬🇧 GOV.UK<br><span style="font-size:10px;opacity:.6;font-weight:400">UK Federal Standard</span></div>
+          <div class="scan-th">🏦 Canadian Banks (RBC, TD)<br><span style="font-size:10px;opacity:.6;font-weight:400">Private Sector Benchmark</span></div>
         </div>
         <div class="scan-row">
-          <div class="scan-cell row-label">Login & Identity</div>
-          <div class="scan-cell"><span class="chip chip-warn">Fragmented</span><br>GCKey and myTC operate independently — users must create two separate accounts. No linking mechanism between them.</div>
-          <div class="scan-cell"><span class="chip chip-teal">Standardized</span><br>GCKey Level 3 MFA. IRCC uses standardized registration fields. Single sign-on planned for all new applications by Spring 2024.</div>
-          <div class="scan-cell"><span class="chip chip-green">Best in class</span><br>Single sign-on with bank-level federation. Login partner model — bank validates identity and federates credentials.</div>
-          <div class="scan-cell"><span class="chip chip-green">Unified</span><br>GOV.UK uses a single Government Gateway ID across all HMRC, DWP, and DVLA services. One account, multiple service access points.</div>
+          <div class="scan-cell row-label">Feedback Access Point</div>
+          <div class="scan-cell"><span class="chip chip-warn">Buried</span><br>4-6 clicks deep. 67 services have footer-only contact. No feedback link on home page.</div>
+          <div class="scan-cell"><span class="chip chip-green">Direct</span><br>"Connect with Us" in the page footer - visible on every page. Phone, local help, and social links in one accessible block.</div>
+          <div class="scan-cell"><span class="chip chip-green">Integrated</span><br>Structured feedback widget per service page. Collects categorized input at the point of service completion.</div>
+          <div class="scan-cell"><span class="chip chip-teal">In-app</span><br>Persistent feedback button on the right edge of the screen. Available at any point in the user journey, not just at completion.</div>
         </div>
         <div class="scan-row">
-          <div class="scan-cell row-label">Service Personalization</div>
-          <div class="scan-cell"><span class="chip chip-warn">None</span><br>All 9+ services shown to all users regardless of relevance. No mode-based filtering (Civil Aviation vs Marine vs Rail).</div>
-          <div class="scan-cell"><span class="chip chip-amber">Partial</span><br>Alpha Design System (digital.canada.ca) provides standards for form components. No personalization layer defined yet at federal level.</div>
-          <div class="scan-cell"><span class="chip chip-green">Role-based</span><br>Dashboard customized by account type (personal / business). Products and services shown based on profile.</div>
-          <div class="scan-cell"><span class="chip chip-green">Service-driven</span><br>GOV.UK routes users to relevant services based on declared need at entry. No irrelevant services shown.</div>
+          <div class="scan-cell row-label">Feedback Structure</div>
+          <div class="scan-cell"><span class="chip chip-warn">Unstructured</span><br>Open text field with no taxonomy. No routing logic. No reference number issued to citizen.</div>
+          <div class="scan-cell"><span class="chip chip-amber">Semi-structured</span><br>Free-form but with labeled channels (call, local help, blog). Doesn't categorize feedback by issue type.</div>
+          <div class="scan-cell"><span class="chip chip-green">Structured</span><br>Feedback categorized by service and issue type. Aggregated quarterly to drive service improvement at program level.</div>
+          <div class="scan-cell"><span class="chip chip-green">Category-based</span><br>In-app prompt with pre-set categories (Feature Requests, Bug Reports, etc.). Routed directly to relevant team. Status visible to submitter.</div>
         </div>
         <div class="scan-row">
-          <div class="scan-cell row-label">Account Recovery</div>
-          <div class="scan-cell"><span class="chip chip-warn">Manual</span><br>No self-serve recovery path. Users who forget credentials create duplicate accounts. Support team handles manually.</div>
-          <div class="scan-cell"><span class="chip chip-amber">In progress</span><br>MFA rollout (end Nov 2023) adds security. Account recovery workflows being mapped in roadmap. Not yet standardized.</div>
-          <div class="scan-cell"><span class="chip chip-green">Self-serve</span><br>Phone + email recovery. Change notifications sent automatically. Discussed in Session 1 as best practice reference.</div>
-          <div class="scan-cell"><span class="chip chip-green">Automated</span><br>Multiple recovery paths. Account change notifications. Compromised account detection. All self-serve.</div>
+          <div class="scan-cell row-label">Feedback → Action Loop</div>
+          <div class="scan-cell"><span class="chip chip-warn">Broken</span><br>One team member manually triages all tickets. No escalation path. Feedback rarely reaches program leads.</div>
+          <div class="scan-cell"><span class="chip chip-amber">Partial</span><br>Channels exist but no public evidence of structured synthesis or feedback-to-decision pipeline.</div>
+          <div class="scan-cell"><span class="chip chip-green">Systematic</span><br>Quarterly synthesis. Service owners receive analytics on their service feedback. Drives redesign cycles.</div>
+          <div class="scan-cell"><span class="chip chip-green">Real-time</span><br>Feature requests voted on and tracked publicly. Status updates (Open, Under Consideration, Complete) shown to submitters. Closes the loop.</div>
         </div>
         <div class="scan-row">
-          <div class="scan-cell row-label">Feedback Collection</div>
-          <div class="scan-cell"><span class="chip chip-warn">Unstructured</span><br>Open text field — no structured taxonomy. Feedback not routed to relevant service teams. No ticket reference or status tracking.</div>
-          <div class="scan-cell"><span class="chip chip-amber">Developing</span><br>No federal standard for client feedback collection defined yet. Appetite for structured feedback emerging from roadmap work.</div>
-          <div class="scan-cell"><span class="chip chip-teal">Structured</span><br>Category-based feedback with routing to relevant department. Confirmation with reference number. Status updates via email/in-app.</div>
-          <div class="scan-cell"><span class="chip chip-green">Integrated</span><br>GOV.UK collects structured, categorized feedback per service. Aggregated quarterly. Drives service improvement at program level.</div>
-        </div>
-        <div class="scan-row">
-          <div class="scan-cell row-label">Document Handling</div>
-          <div class="scan-cell"><span class="chip chip-warn">Not integrated</span><br>No in-platform document upload. Users must send documents separately. No status tracking on submitted documents.</div>
-          <div class="scan-cell"><span class="chip chip-amber">Scoped</span><br>Document upload/download discussed in Working Group (Nov 14). Upload to SharePoint Cloud proposed. Access control required.</div>
-          <div class="scan-cell"><span class="chip chip-teal">Supported</span><br>Secure document upload within platform. Status of submitted docs visible in account. Email override with reason if docs returned.</div>
-          <div class="scan-cell"><span class="chip chip-green">End-to-end</span><br>Upload, review, status, and notification all within one platform. Document status visible without contacting support.</div>
+          <div class="scan-cell row-label">Encouraging Feedback</div>
+          <div class="scan-cell"><span class="chip chip-warn">Passive</span><br>No language encouraging citizens to leave feedback. Many pages don't acknowledge that feedback is even possible.</div>
+          <div class="scan-cell"><span class="chip chip-teal">Active</span><br>Clear "Connect with us" heading. Phone number visible and prominent. Social channels listed in one place.</div>
+          <div class="scan-cell"><span class="chip chip-green">Embedded</span><br>"Was this page helpful?" prompt at the bottom of every service page. Low-friction, anonymous, zero navigation required.</div>
+          <div class="scan-cell"><span class="chip chip-green">Persistent</span><br>Feedback button visible at all times. Users never have to search for a way to provide input - it follows them.</div>
         </div>
       </div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px">Key Findings from the Scan</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;margin-top:36px">Key Findings from the Scan</div>
       <div class="findings-strip">
-        <div class="finding-card positive"><div class="finding-num">01</div><div class="finding-title">Federal standards exist — TC isn't using them</div><div class="finding-body">GCKey Level 3 MFA, IRCC's registration field standards, and the Alpha Design System at digital.canada.ca all provide ready-to-adopt patterns. TC's current state is behind existing federal standards, not just industry benchmarks.</div><div class="finding-source">Source: Working Group Nov 14 · Session 5 (Alpha Design System reference)</div></div>
-        <div class="finding-card negative"><div class="finding-num">02</div><div class="finding-title">The bank model is the user's mental model</div><div class="finding-body">Workshop participants and users consistently referenced banking as their expectation benchmark — single login, personalized dashboard, account recovery via notification. TC is competing against this expectation with a fragmented experience.</div><div class="finding-source">Source: Session 1 (login partner reference) · Session 7 (Intuit workflow reference)</div></div>
-        <div class="finding-card opportunity"><div class="finding-num">03</div><div class="finding-title">Mode-based routing is the structural fix</div><div class="finding-body">Both GOV.UK and the bank model route users by need/role at entry — not by presenting every service simultaneously. TC's proposed mode selection (Civil Aviation / Marine / Rail / Personal / Business) directly mirrors this proven pattern.</div><div class="finding-source">Source: Sessions 2, 4, 5 · Working Group Nov 14</div></div>
+        <div class="finding-card positive"><div class="finding-num">01</div><div class="finding-title">US healthcare.gov shows the quick win</div><div class="finding-body">healthcare.gov added a "Connect with Us" block in the footer with phone, local help, blog, and social links - all visible on every page with zero navigation required. TC could implement this immediately on tc.canada.ca. The language is encouraging, not passive. This became Recommendation 2 in my ED presentation.</div><div class="finding-source">Source: Environmental Scan · healthcare.gov footer analysis</div></div>
+        <div class="finding-card negative"><div class="finding-num">02</div><div class="finding-title">GOV.UK and the banks close the loop - TC doesn't</div><div class="finding-body">GOV.UK routes structured feedback by service to program owners who review quarterly. Canadian banks surface real-time status to submitters. TC's current state stops at inbox - no synthesis, no routing, no visibility back to the citizen. The gap isn't just access; it's the entire back-end of feedback.</div><div class="finding-source">Source: Environmental Scan · GOV.UK service feedback documentation · Bank in-app feedback comparison</div></div>
+        <div class="finding-card opportunity"><div class="finding-num">03</div><div class="finding-title">In-app prompts are the long-term answer</div><div class="finding-body">Both GOV.UK's inline prompt ("Was this page helpful?") and Canadian banking apps' persistent feedback button demonstrate that feedback works best when it's zero-navigation and context-aware. This informed the long-term recommendation: a standardized in-app feedback mechanism embedded in the oneTC portal, not linked from the footer.</div><div class="finding-source">Source: Environmental Scan · Long-term Recommendations (ED presentation, approved)</div></div>
       </div>
     </div>
 
-    <!-- ARTIFACT 07: SWOT -->
+    <!-- ARTIFACT 04: SWOT -->
     <div class="artifact-spacer">
-      <div class="artifact-label">Artifact 07 · SWOT Analysis</div>
-      <div class="artifact-title">TC oneTC Platform — Strategic Position</div>
-      <div class="artifact-desc">SWOT synthesized from the environmental scan, 8 co-design sessions, and the Integrated Roadmap Working Group. Each point is grounded in specific session findings. Used to frame strategic recommendations for the Executive Director.</div>
+      <div class="artifact-label">Artifact 04 · SWOT Analysis</div>
+      <div class="artifact-title">TC Feedback Ecosystem - Strategic Position</div>
+      <div class="artifact-desc">SWOT synthesized from the full navigation audit, service landscape data, and environmental scan. Documented on a Miro board alongside the cognitive bias analysis. Used to frame the strategic short- and long-term recommendations delivered to the Executive Director.</div>
       <div class="swot-header-strip">
         <div class="swot-col-label internal">← Internal Factors</div>
         <div class="swot-col-label external">External Factors →</div>
@@ -780,205 +688,147 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
         <div class="swot-quadrant swot-s">
           <div class="swot-letter">S</div>
           <div class="swot-quadrant-label"><div class="swot-icon">💪</div><div><div class="swot-title">Strengths</div><div class="swot-subtitle">Helpful · Internal</div></div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">GCKey infrastructure exists</span>MFA Level 3 is already available as an authentication layer — TC doesn't need to build identity infrastructure from scratch.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Cross-functional design willingness</span>8 co-design sessions with 6–8 participants each demonstrated strong internal appetite for a unified platform. Teams were actively contributing wireframes, not just attending.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Existing Alpha Design System</span>Canada's federal design system provides ready-to-use, accessible component patterns — reducing design and development effort needed for standardization.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Rich service data already collected</span>190+ services are already catalogued and running. The data exists — the gap is synthesis and routing, not collection.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">5 social media channels already exist</span>TC has Facebook, Twitter/X, YouTube, LinkedIn, and Instagram - channels that could be activated for feedback if links were repaired and strategies developed around them.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">73 services already have email contacts</span>Email infrastructure exists across most services - the gap is standardization, not creation from scratch.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">TSC and Civil Aviation pilots underway</span>Two services were already running post-transaction feedback pilots - real-world data to learn from before department-wide rollout.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Executive appetite for change</span>The oneTC SDSC June 2024 presentation showed clear leadership commitment to service improvement and data-driven decisions.</div></div>
         </div>
         <div class="swot-quadrant swot-w">
           <div class="swot-letter">W</div>
           <div class="swot-quadrant-label"><div class="swot-icon">⚠️</div><div><div class="swot-title">Weaknesses</div><div class="swot-subtitle">Harmful · Internal</div></div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Fragmented identity system</span>GCKey and myTC operate independently with no linking mechanism — forcing duplicate account creation and generating data inconsistencies across services.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">No feedback synthesis loop</span>Client feedback is collected via unstructured open-text fields with no taxonomy, no routing to program leads, and no mechanism to convert feedback into service improvement decisions.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Legacy system constraints</span>Credential data stored as transient data — cannot be validated or persisted. Legacy systems limit what information can be stored, retrieved, or shared across services.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">No personalization layer</span>All users see all services regardless of relevance. No mode-based routing means high cognitive load and poor task success for service-specific users like pilots or marine operators.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Single-point-of-failure feedback intake</span>One person manually reviewing all tickets across 190+ services - no triage, no taxonomy, no escalation path. A completely unsustainable model.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">No feedback taxonomy</span>Unstructured open-text fields mean feedback can't be categorized, synthesized, or compared across services. Data exists but is unusable at scale.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Broken social media links in footer</span>Links that lead nowhere actively damage trust - and represent TC's most visible shared feedback channel.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">No feedback-to-sprint pipeline</span>Even when feedback was captured, no mechanism existed to feed it into active design sprints or program improvement decisions.</div></div>
         </div>
         <div class="swot-quadrant swot-o">
           <div class="swot-letter">O</div>
           <div class="swot-quadrant-label"><div class="swot-icon">🚀</div><div><div class="swot-title">Opportunities</div><div class="swot-subtitle">Helpful · External</div></div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">MFA rollout creates a reset moment</span>The planned Spring 2024 MFA rollout is a natural forcing function to revisit account management architecture — a rare window to standardize before more legacy accrues.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Federal digital standards momentum</span>The Government of Canada's broader digital transformation push creates organizational cover for TC to modernize — riding existing momentum.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Proven patterns available to adopt</span>GOV.UK, banking federation models, and IRCC's registration approach are all proven and adaptable — TC doesn't need to innovate, it needs to adopt.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Chatbot & in-app feedback channels</span>Long-term recommendations identified chatbot and in-app prompts as low-friction feedback channels that other departments have already piloted.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">US and UK models are ready to adapt</span>healthcare.gov's direct footer contact and GOV.UK's per-service feedback prompts are proven patterns TC can implement without building from scratch.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Canadian bank in-app prompts set the standard</span>Citizens already expect feedback to be available in-app, at the right moment - not buried in navigation. The design pattern exists.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">oneTC portal is the natural home</span>The long-term oneTC portal provides the right infrastructure for an embedded, standardized feedback mechanism built into every service at completion.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Pilot data from TSC and CivAv</span>Real pilot evidence from running programmes can build the organizational case before department-wide rollout.</div></div>
         </div>
         <div class="swot-quadrant swot-t">
           <div class="swot-letter">T</div>
           <div class="swot-quadrant-label"><div class="swot-icon">⚡</div><div><div class="swot-title">Threats</div><div class="swot-subtitle">Harmful · External</div></div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">ATIP and data privacy risk</span>Collecting date of birth and other personal identifiers raises ATIP flags. Scope of data collection must be carefully justified — risk of compliance friction slowing delivery.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">User expectations set by private sector</span>Citizens increasingly compare government digital services to banking and e-commerce. The gap between TC's current experience and user expectations is growing — risking trust erosion.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Integration complexity with legacy systems</span>100s–1000s of records exist in legacy formats. Bridging new account standards with existing data structures is a significant technical risk.</div></div>
-          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Cross-department coordination overhead</span>Services span multiple modes (CivAv, Marine, Rail) with different owners and priorities. Getting alignment on a shared account standard is a governance challenge, not just a design one.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Public trust in government services is declining</span>SDSC data confirmed that Canadians' perception of federal service delivery has been falling - a broken feedback loop accelerates this trend.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Cognitive biases are compounding the problem</span>Negativity bias means bad experiences - like hitting a dead-end navigation path - register more strongly than smooth ones. Every broken link erodes trust disproportionately.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Tool selection risk</span>SurveyMonkey, Typeform, and other third-party tools offer quick wins but raise questions about data sovereignty and GC compliance - any tool selected must be vetted.</div></div>
+          <div class="swot-item"><div class="swot-dot"></div><div class="swot-item-text"><span class="swot-item-bold">Organizational inertia</span>With 43% of services having no performance measurement at all, change requires stakeholder alignment at every level - not just executive approval.</div></div>
         </div>
       </div>
-      <div class="swot-row-labels">
-        <div class="swot-row-label helpful">Helpful to achieving the objective ↑</div>
-        <div class="swot-row-label harmful">Harmful to achieving the objective ↑</div>
-      </div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin:40px 0 16px">Strategic Implications — How the SWOT Shaped Recommendations</div>
-      <div class="strategy-grid">
-        <div class="strategy-card"><div class="strategy-icon-wrap" style="background:var(--green-bg)">🎯</div><div><div class="strategy-card-title">SO Strategy — Use strengths to capture opportunities</div><div class="strategy-card-body">Leverage the existing GCKey infrastructure and the Spring 2024 MFA rollout window to implement a unified account ID system. Use the Alpha Design System to standardize components across all TC services simultaneously.</div></div></div>
-        <div class="strategy-card"><div class="strategy-icon-wrap" style="background:var(--warn-bg)">🛡️</div><div><div class="strategy-card-title">WT Strategy — Minimize weaknesses, avoid threats</div><div class="strategy-card-body">Adopt a "generic at base, specific at depth" registration model — collecting minimum fields up front to reduce ATIP risk, with service-specific data collected only at enrollment.</div></div></div>
-        <div class="strategy-card"><div class="strategy-icon-wrap" style="background:var(--blue-bg)">📐</div><div><div class="strategy-card-title">WO Strategy — Overcome weaknesses via opportunities</div><div class="strategy-card-body">The feedback synthesis gap (weakness) can be addressed by adopting the structured feedback taxonomy patterns already proven in GOV.UK and other federal departments (opportunity) — without building custom infrastructure.</div></div></div>
-        <div class="strategy-card"><div class="strategy-icon-wrap" style="background:var(--amber-bg)">⚡</div><div><div class="strategy-card-title">ST Strategy — Use strengths to reduce threats</div><div class="strategy-card-body">The strong internal design willingness demonstrated across 8 sessions (strength) is the antidote to cross-department coordination risk (threat) — co-design built shared ownership before recommendations were finalized.</div></div></div>
-      </div>
     </div>
+
   </div>
 </section>
 
-<!-- 03 DECISIONS -->
+<!-- 03 KEY FINDINGS -->
 <section class="section" id="decisions">
   <div class="container">
-    <p class="section-eyebrow"><span class="section-num">03</span>The Decisions</p>
-    <h2 class="section-title">From fragmented findings to a coherent design direction</h2>
-    <p class="section-sub">The research surfaced a system built for data collection — not for learning or service improvement. Three core design decisions shaped the strategic direction.</p>
+    <p class="section-eyebrow"><span class="section-num">03</span>Key Findings</p>
+    <h2 class="section-title">What the data actually showed - beyond the numbers</h2>
+    <p class="section-sub">The audit produced quantitative findings, but the more important work was translating those numbers into a clear picture of the system's failure mode and what it would take to fix it.</p>
     <div class="decision-list">
-      <div class="decision-card"><div class="decision-num">1</div><div><div class="decision-title">Separate feedback collection from feedback synthesis</div><div class="decision-body">Rather than proposing a new collection tool, the priority was creating a <strong>synthesis layer</strong> — a structured process by which collected feedback would be routed to the right people at the right cadence. This decision was grounded in the finding that data existed but wasn't being used.</div></div></div>
-      <div class="decision-card"><div class="decision-num">2</div><div><div class="decision-title">Standardize feedback taxonomy across service lines</div><div class="decision-body">The comparative analysis revealed that inconsistent categorization was the root cause of why feedback couldn't be aggregated. A <strong>shared taxonomy</strong> — even a simple one — would allow cross-service pattern recognition for the first time. This was the lowest-effort, highest-impact structural change identified.</div></div></div>
-      <div class="decision-card"><div class="decision-num">3</div><div><div class="decision-title">Recommend role-based feedback routing, not just collection</div><div class="decision-body">Workshop sessions revealed that program leads were not receiving the feedback being collected — it was sitting with frontline teams who had no mechanism to escalate it. The recommendation was to <strong>create explicit role definitions</strong> (who collects, who synthesizes, who acts) rather than assume feedback would find its way up organically.</div></div></div>
-    </div>
-    <div class="pull-quote" style="margin-top:40px;">
-      <p>"How can we update the name on the portal if someone gets married? How do we handle account recovery when users forget credentials and create duplicates? These aren't edge cases — they're high-frequency problems that need to be prioritized before edge cases."</p>
-      <cite>— Session participant (Nov 2023), reinforcing the need for systemic design over one-off fixes</cite>
+      <div class="decision-card">
+        <div class="decision-num">1</div>
+        <div>
+          <div class="decision-title">The feedback system wasn't broken - it was never built</div>
+          <div class="decision-body">TC had collected feedback mechanisms (email addresses, phone numbers, a footer Contact Us link) but had not built a feedback <em>system</em>. There was no taxonomy, no routing logic, no synthesis process, and no defined path from citizen input to program decision. One team member manually reviewing inbound tickets was not a system - it was a workaround that created the illusion of a feedback loop without the substance of one.</div>
+        </div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-num">2</div>
+        <div>
+          <div class="decision-title">Navigation depth was the first barrier - and most citizens never got past it</div>
+          <div class="decision-body">Requiring 4-6 clicks before a citizen could even find a contact method meant that only the most motivated users were providing feedback. The 67 services with footer-only contact had effectively opted out of feedback entirely - not by policy, but by design neglect. The first recommendation wasn't about the feedback form itself; it was about surfacing the front door.</div>
+        </div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-num">3</div>
+        <div>
+          <div class="decision-title">Inconsistency was more damaging than absence</div>
+          <div class="decision-body">A user navigating three related civil aviation services would encounter three different email addresses, potentially two different phone numbers, and in some cases no contact at all - even within the same certification area. This inconsistency was more cognitively damaging than having no contact at all, because it signalled organizational disorganization and undermined trust in whether anyone was actually listening.</div>
+        </div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-num">4</div>
+        <div>
+          <div class="decision-title">The language on TC's pages didn't invite feedback - it just didn't block it</div>
+          <div class="decision-body">None of the 190+ service pages actively encouraged citizens to provide feedback. The wording was passive at best - "Contact Us" at the footer, with no framing about why it mattered or what TC would do with it. Comparatively, healthcare.gov says "Connect with Us" and lists channels with clear labels. GOV.UK says "Was this page helpful?" with a one-tap response. The bar for encouraging feedback is not high - TC just hadn't cleared it.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- METRICS FRAMEWORK -->
+<!-- 04 RECOMMENDATIONS -->
 <section class="section" id="metrics">
   <div class="container">
-    <p class="section-eyebrow"><span class="section-num">↗</span>Metrics Framework</p>
-    <h2 class="section-title">Measuring the metrics that matter</h2>
-    <p class="section-sub">Applied from the <em>Service Design: Measuring the Metrics that Matter</em> framework — grounding the TC recommendations in concepts of Time Tax, Failure Demand, and the Effectiveness vs. Efficiency split to ensure we targeted real service improvement, not vanity tracking.</p>
+    <p class="section-eyebrow"><span class="section-num">04</span>Recommendations</p>
+    <h2 class="section-title">Short-term fixes. Long-term strategy. One approved direction.</h2>
+    <p class="section-sub">The recommendations were structured in two horizons: quick wins that required no new infrastructure and could be implemented in active sprints, and a long-term strategic direction for how TC should design its feedback ecosystem going forward.</p>
 
     <div class="metrics-framework">
       <div class="mf-inner">
-
-        <!-- EFFECTIVENESS VS EFFICIENCY -->
-        <p class="mf-label">Core Framework</p>
-        <h3 class="mf-title">Effectiveness vs. Efficiency</h3>
-        <p class="mf-sub">Before recommending any measurement approach for oneTC, the recommendations were framed around two distinct questions — applied at different phases of the project cycle.</p>
-        <div class="mf-two" style="margin-bottom:28px;">
+        <div class="mf-label">Strategic Framework</div>
+        <div class="mf-title">The oneTC Feedback Strategy</div>
+        <div class="mf-sub">Approved by the Executive Director of Transport Canada's Digital Services branch and fed into the June 2024 SDSC roadmap. The framework separates what TC should do now from what it should build toward.</div>
+        <div class="mf-two">
           <div class="mf-half">
-            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;"><span style="font-size:20px;">🎯</span><span class="mf-half-q">"Are we building the right thing?"</span></div>
-            <p class="mf-half-sub">Service Effectiveness · Early cycle / problem definition</p>
+            <div class="mf-half-q">Short-term recommendations</div>
+            <div class="mf-half-sub">Quick wins · Active sprints</div>
             <ul>
-              <li>Does the feedback mechanism actually improve citizen services — or just collect data?</li>
-              <li>Are service teams acting on the feedback collected, not just storing it?</li>
-              <li>Is the right signal reaching the right decision-makers at the right cadence?</li>
-              <li>Measured through: success rate achieving expected outcomes for users, staff, and the organization</li>
+              <li>Perform further environmental scan with other Canadian federal departments to understand how they manage feedback - build from existing evidence</li>
+              <li>Identify current-state roles and responsibilities for feedback intake and complete a stakeholder map - the single-reviewer problem needs immediate structural fix</li>
+              <li>Identify a list of "quick wins" - starting with: rewriting page copy to actively encourage feedback, adding a direct contact link on the TC main page, and re-verifying and repairing all social media links in the footer</li>
             </ul>
           </div>
           <div class="mf-half">
-            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;"><span style="font-size:20px;">⚙️</span><span class="mf-half-q">"Are we building it right?"</span></div>
-            <p class="mf-half-sub">Service Efficiency · Delivery phase</p>
+            <div class="mf-half-q">Long-term recommendations</div>
+            <div class="mf-half-sub">Strategic direction · Future sprints</div>
             <ul>
-              <li>How much time does feedback take to travel from collection to a decision?</li>
-              <li>Are duplicate accounts and credential failures being resolved without manual escalation?</li>
-              <li>Is administrative burden being reduced across service enrollment flows?</li>
-              <li>Measured through: processing time, support ticket volume, user satisfaction signal</li>
+              <li>Create a TC-wide strategy for how client feedback will be managed across the department - covering roles, feedback methods, data management, synthesis, and escalation</li>
+              <li>Identify and standardize feedback channels across all services - exploring in-app prompts, chatbot integration, and post-service surveys as the primary mechanisms (SurveyMonkey or Typeform as candidate tools, subject to GC data compliance review)</li>
+              <li>Define how citizen feedback will be inculcated into active design sprints - so that feedback doesn't end at inbox receipt but routes to program leads and drives measurable service improvement</li>
             </ul>
           </div>
         </div>
-
-        <!-- TIME TAX + FAILURE DEMAND -->
-        <p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#5A7080;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;">Key Concepts Applied to TC</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px;">
-          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:12px;padding:24px;">
-            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
-              <div style="width:36px;height:36px;border-radius:8px;background:rgba(204,0,0,0.25);border:1px solid rgba(204,0,0,0.4);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">⏱️</div>
-              <div>
-                <div style="font-family:'DM Serif Display',serif;font-size:17px;color:white;">Time Tax</div>
-                <div style="font-size:11px;color:#5A7080;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:1px;">Wasted time in service processes</div>
-              </div>
-            </div>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:7px;">
-              <li style="font-size:13px;color:#8FA4B0;display:flex;gap:8px;line-height:1.5;"><span style="color:#CC0000;flex-shrink:0;">·</span>Understanding complex eligibility requirements and forms</li>
-              <li style="font-size:13px;color:#8FA4B0;display:flex;gap:8px;line-height:1.5;"><span style="color:#CC0000;flex-shrink:0;">·</span>Waiting on hold or navigating a confusing website to find the right service</li>
-              <li style="font-size:13px;color:#8FA4B0;display:flex;gap:8px;line-height:1.5;"><span style="color:#CC0000;flex-shrink:0;">·</span>Coordinating between departments just to achieve a single outcome</li>
-              <li style="font-size:13px;color:#8FA4B0;display:flex;gap:8px;line-height:1.5;"><span style="color:#CC0000;flex-shrink:0;">·</span>Correcting errors from duplicate account creation and credential loss</li>
-            </ul>
-            <div style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.07);font-size:12px;color:#5A7080;font-style:italic;">TC context: Maya's journey required 3 separate logins and a phone call to complete a single service request.</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:12px;padding:24px;">
-            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
-              <div style="width:36px;height:36px;border-radius:8px;background:rgba(212,130,10,0.2);border:1px solid rgba(212,130,10,0.35);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🔁</div>
-              <div>
-                <div style="font-family:'DM Serif Display',serif;font-size:17px;color:white;">Failure Demand</div>
-                <div style="font-size:11px;color:#5A7080;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:1px;">Upstream failures creating downstream work</div>
-              </div>
-            </div>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:7px;">
-              <li style="font-size:13px;color:#8FA4B0;display:flex;gap:8px;line-height:1.5;"><span style="color:#D4820A;flex-shrink:0;">·</span><span><strong style="color:#C5D4DB;">80%</strong> of Nova Scotia heating rebate calls came from failed online transactions — not genuine service needs</span></li>
-              <li style="font-size:13px;color:#8FA4B0;display:flex;gap:8px;line-height:1.5;"><span style="color:#D4820A;flex-shrink:0;">·</span><span><strong style="color:#C5D4DB;">~60%</strong> of Alberta court contact centre calls were avoidable — ~$500k annual savings potential</span></li>
-              <li style="font-size:13px;color:#8FA4B0;display:flex;gap:8px;line-height:1.5;"><span style="color:#D4820A;flex-shrink:0;">·</span>TC parallel: support calls driven by no self-serve recovery, no status tracking, and no routing confirmation after form submission</li>
-            </ul>
-            <div style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.07);font-size:12px;color:#5A7080;font-style:italic;">Reducing failure demand was reframed as a cost-reduction argument, not just a UX one — strengthening the executive case.</div>
-          </div>
+        <div class="iceberg-row">
+          <div class="ic-cell surface"><div class="ic-lbl"><strong>Fix the footer</strong>Repair broken links. Add direct contact block to TC main page.</div></div>
+          <div class="ic-cell surface"><div class="ic-lbl"><strong>Rewrite the language</strong>"Connect with us" not "Contact Us". Make feedback feel invited.</div></div>
+          <div class="ic-cell surface"><div class="ic-lbl"><strong>Map the roles</strong>Define who collects, synthesizes, and escalates. End the single-reviewer model.</div></div>
+          <div class="ic-cell hidden"><div class="ic-lbl"><strong>Standardize channels</strong>One taxonomy. One intake standard. Consistent across all 190+ services.</div></div>
+          <div class="ic-cell hidden"><div class="ic-lbl"><strong>Close the loop</strong>Build the pipeline from feedback to sprint. Citizens heard → services improve.</div></div>
         </div>
-
-        <!-- ICEBERG MODEL -->
-        <div style="margin-bottom:28px;">
-          <p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#5A7080;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;">The Service Iceberg — What Gets Measured vs. What Drives It</p>
-          <div class="iceberg-row">
-            <div class="ic-cell surface"><div class="ic-lbl"><strong>User Experience</strong>Visible to citizens</div></div>
-            <div class="ic-cell hidden"><div class="ic-lbl"><strong>Process & Ops</strong>Workflows & routing</div></div>
-            <div class="ic-cell hidden"><div class="ic-lbl"><strong>Strategy & Gov</strong>Roles & accountability</div></div>
-            <div class="ic-cell hidden"><div class="ic-lbl"><strong>Tech Infrastructure</strong>Account systems</div></div>
-            <div class="ic-cell hidden"><div class="ic-lbl"><strong>People & Org</strong>Who owns feedback</div></div>
-          </div>
-          <p style="font-size:12px;color:#3D5060;margin-top:10px;font-style:italic;">Surface metrics measure symptoms. The recommendations targeted the hidden layers — process, governance, and people — that cause the visible failures.</p>
-        </div>
-
-        <!-- SERVICE METRICS CARDS -->
-        <p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#5A7080;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;">Service Metrics Cards — Applied to TC</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px;">
-          <div style="background:rgba(204,0,0,0.08);border:1px solid rgba(204,0,0,0.2);border-radius:10px;padding:20px;">
-            <div style="font-size:12px;font-weight:700;color:#E8112D;font-family:'JetBrains Mono',monospace;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;">Effectiveness Card</div>
-            <div style="font-size:13px;color:#C5D4DB;margin-bottom:6px;font-weight:500;">Service job to be done</div>
-            <div style="font-size:13px;color:#8FA4B0;margin-bottom:12px;line-height:1.6;">Enable TC service teams to collect, synthesize, and act on citizen feedback to continuously improve the 190+ services on oneTC.</div>
-            <div style="font-size:12px;color:#5A7080;font-family:'JetBrains Mono',monospace;">Outcomes: % of services with active feedback loops · % of feedback routed to program leads · decision lag reduction</div>
-          </div>
-          <div style="background:rgba(212,130,10,0.08);border:1px solid rgba(212,130,10,0.2);border-radius:10px;padding:20px;">
-            <div style="font-size:12px;font-weight:700;color:#D4820A;font-family:'JetBrains Mono',monospace;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;">Efficiency Card</div>
-            <div style="font-size:13px;color:#C5D4DB;margin-bottom:6px;font-weight:500;">Administrative burden to reduce</div>
-            <div style="font-size:13px;color:#8FA4B0;margin-bottom:12px;line-height:1.6;">Reduce the manual effort caused by duplicate accounts, unstructured feedback, and lack of routing — freeing service teams to focus on improvement rather than triage.</div>
-            <div style="font-size:12px;color:#5A7080;font-family:'JetBrains Mono',monospace;">Measures: duplicate account rate · support call volume · time-to-synthesis per feedback item</div>
-          </div>
-        </div>
-
-        <!-- KPI DISCIPLINE CALLOUT -->
         <div class="kpi-callout">
-          <span style="font-size:20px;flex-shrink:0;margin-top:1px;">💡</span>
-          <p><strong>KPI Discipline:</strong> Recommendations were limited to 2–3 core metrics per service to avoid vanity metrics that track volume without impact. Metrics were co-created with stakeholders, users, and internal staff — using their language, not design jargon. The sequencing mattered too: <strong>start with efficiency improvements</strong> (standardized taxonomy, defined routing roles) to build trust before tackling effectiveness-level questions about whether the right services are being built at all.</p>
+          <div>💡</div>
+          <p><strong>The key design question I left the Executive Director with:</strong> "What is the design for 'anytime' feedback - available on every service landing page, at any point in the journey? And how do we ensure it feeds back into the system, rather than disappearing into a shared inbox?"</p>
         </div>
-
       </div>
     </div>
-  </div>
-</section>
 
-<!-- 04 SOLUTION -->
-<section class="section" id="solution">
-  <div class="container">
-    <p class="section-eyebrow"><span class="section-num">04</span>The Solution</p>
-    <h2 class="section-title">A strategic recommendations report built for executive decision-making</h2>
-    <p class="section-sub">The deliverable combined current-state findings, comparative analysis, and a prioritized roadmap — designed specifically to be actionable at the executive level, not just informative.</p>
-    <div class="rec-grid">
-      <div class="rec-half">
-        <div class="rec-half-head"><span class="rec-horizon-pill pill-short">Short-term</span><span class="rec-half-title">Immediate Fixes</span></div>
-        <ul class="rec-list">
-          <li><span class="rec-num short">1</span><span>Conduct targeted user research with both internal TC employees and external service users to validate pain points before committing to solutions</span></li>
-          <li><span class="rec-num short">2</span><span>Establish a shared feedback taxonomy across all TC services as an immediate structural fix</span></li>
-          <li><span class="rec-num short">3</span><span>Define explicit roles for feedback collection, synthesis, and escalation within each service team</span></li>
-          <li><span class="rec-num short">4</span><span>Prioritize high-frequency account issues (credential recovery, duplicate accounts) before addressing edge cases</span></li>
-        </ul>
-      </div>
-      <div class="rec-half">
-        <div class="rec-half-head"><span class="rec-horizon-pill pill-long">Long-term</span><span class="rec-half-title">Strategic Direction</span></div>
-        <ul class="rec-list">
-          <li><span class="rec-num long">5</span><span>Create a new TC-wide strategy for how client feedback will be managed across the department — covering roles, feedback methods, and data management</span></li>
-          <li><span class="rec-num long">6</span><span>Identify and standardize feedback channels across the platform — including in-app prompts, chatbot integration, and post-service surveys</span></li>
-        </ul>
+    <div style="margin-top:48px;">
+      <div class="rec-grid">
+        <div class="rec-half">
+          <div class="rec-half-head"><span class="rec-horizon-pill pill-short">Short-term</span><span class="rec-half-title">Immediate Actions</span></div>
+          <ul class="rec-list">
+            <li><span class="rec-num short">1</span><span>Conduct targeted environmental scan of other federal departments to build evidence base before proposing specific tools or channels</span></li>
+            <li><span class="rec-num short">2</span><span>Complete a stakeholder map for feedback roles - identifying who currently collects, who reviews, and who is responsible for acting on feedback across each service area</span></li>
+            <li><span class="rec-num short">3</span><span>Modify page copy to actively encourage feedback - "your feedback helps TC improve" is a low-cost, high-impact change that zero service pages currently make</span></li>
+            <li><span class="rec-num short">4</span><span>Add a direct "Contact Us" or "Connect with Us" link on the TC main page - not buried three levels deep, visible from the home page</span></li>
+            <li><span class="rec-num short">5</span><span>Audit and repair all social media links in the site footer - broken links in the only shared feedback channel are actively undermining trust</span></li>
+          </ul>
+        </div>
+        <div class="rec-half">
+          <div class="rec-half-head"><span class="rec-horizon-pill pill-long">Long-term</span><span class="rec-half-title">Strategic Direction</span></div>
+          <ul class="rec-list">
+            <li><span class="rec-num long">6</span><span>Design a TC-wide feedback strategy covering roles, methods, data management, synthesis cadence, and escalation paths - moving from ad-hoc to systematic</span></li>
+            <li><span class="rec-num long">7</span><span>Identify standardized feedback channels for the oneTC portal - in-app prompts, post-service micro-surveys, and chatbot integration as the primary mechanisms</span></li>
+            <li><span class="rec-num long">8</span><span>Build the feedback-to-sprint pipeline - define how citizen feedback routes from intake to program lead to sprint backlog, closing the loop that is currently broken</span></li>
+            <li><span class="rec-num long">9</span><span>Answer the "anytime feedback" design question - what does feedback look like on a service landing page, before, during, and after a transaction?</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -988,17 +838,17 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
 <section class="section" id="impact">
   <div class="container">
     <p class="section-eyebrow"><span class="section-num">05</span>The Impact</p>
-    <h2 class="section-title">Department-wide buy-in secured for a redesigned feedback strategy</h2>
-    <p class="section-sub">The recommendations report was presented directly to the Executive Director of Transport Canada's Digital Services branch and received department-wide approval — a meaningful outcome in a risk-averse federal environment.</p>
+    <h2 class="section-title">Recommendations approved. Piloted. Fed into department-wide sprint planning.</h2>
+    <p class="section-sub">In a risk-averse federal environment, getting strategic recommendations approved by an Executive Director and incorporated into departmental roadmap planning is a meaningful outcome - particularly for research that began with a blank canvas and no existing audit of the feedback landscape.</p>
     <div class="impact-grid">
-      <div class="impact-card"><div class="impact-num">190+</div><div class="impact-text"><strong>Services analyzed</strong><span>Full landscape mapped for the first time — giving leadership a clear view of the feedback ecosystem</span></div></div>
-      <div class="impact-card"><div class="impact-num">8</div><div class="impact-text"><strong>Co-design sessions</strong><span>Cross-functional alignment built into the process — co-designed recommendations carry organizational ownership</span></div></div>
-      <div class="impact-card"><div class="impact-num">✓</div><div class="impact-text"><strong>Executive Director presentation</strong><span>Strategic recommendations approved department-wide — rare in a risk-averse federal environment</span></div></div>
-      <div class="impact-card"><div class="impact-num">2</div><div class="impact-text"><strong>Design system contributions</strong><span>Iconography and form components added to the oneTC design system, extending impact beyond the project</span></div></div>
+      <div class="impact-card"><div class="impact-num">190+</div><div class="impact-text"><strong>Services audited from scratch</strong><span>First time the full feedback landscape of Transport Canada's digital services had been mapped - navigation paths, contact methods, and gaps all documented in one place</span></div></div>
+      <div class="impact-card"><div class="impact-num">✓</div><div class="impact-text"><strong>Executive Director approval</strong><span>Recommendations presented and approved department-wide - the short-term quick wins and long-term strategy both accepted and incorporated into planning</span></div></div>
+      <div class="impact-card"><div class="impact-num">2</div><div class="impact-text"><strong>Active pilots informed by research</strong><span>The TSC and Civil Aviation National Service Centre post-transaction feedback pilots - already running - were contextualized by the audit data and folded into the rollout plan</span></div></div>
+      <div class="impact-card"><div class="impact-num">Jun 2024</div><div class="impact-text"><strong>Fed into SDSC roadmap</strong><span>Feedback strategy work appeared explicitly in the June 2024 Strategic Director Steering Committee presentation - as part of the Service Data workstream and Client Feedback initiative</span></div></div>
     </div>
     <div class="est-impact">
-      <div style="flex-shrink:0;text-align:center;"><div class="est-impact-num">30–40%</div><div class="est-impact-unit">Estimated reduction</div></div>
-      <div class="est-impact-text"><h4>Feedback-to-decision lag time</h4><p>Based on standardized feedback taxonomy and defined routing roles, the redesigned strategy is estimated to reduce feedback-to-decision lag time by 30–40% and eliminate the duplicated collection effort currently spread across isolated service teams. Beyond the immediate deliverable, this project shifted how the team thought about feedback — from a compliance checkbox to an ongoing organizational learning tool.</p></div>
+      <div style="flex-shrink:0;text-align:center;"><div class="est-impact-num">3040%</div><div class="est-impact-unit">Estimated reduction</div></div>
+      <div class="est-impact-text"><h4>In feedback-to-decision lag time</h4><p>Based on standardizing the feedback taxonomy and defining routing roles, the redesigned strategy is estimated to reduce the time between feedback submission and program action by 3040% - and eliminate the single-reviewer bottleneck that was causing most feedback to go unactioned. Beyond the numbers, this project changed how TC's service teams thought about feedback: from a compliance checkbox to an active learning input that belongs in every sprint.</p></div>
     </div>
   </div>
 </section>
@@ -1009,11 +859,20 @@ footer{background:var(--dark);padding:56px 0;border-top:1px solid rgba(255,255,2
     <p class="section-eyebrow"><span class="section-num">↺</span>Reflection</p>
     <h2 class="section-title">What I'd do differently</h2>
     <div class="reflection-card">
-      <div class="reflection-item"><h4>Push for external user research earlier</h4><p>Several workshop participants noted that the proposed workflows were designed from an internal perspective and needed validation with the citizens actually using TC's services. "Whatever order the modes come up with, it should be based on talking to not only internal but external users as well." — this feedback arrived late, and earlier external research would have strengthened the recommendations significantly.</p></div>
-      <div class="reflection-item"><h4>Pilot before recommending at scale</h4><p>I'd have advocated for a lightweight pilot — testing the new feedback taxonomy on one or two services before recommending a department-wide rollout. In government contexts, evidence from a small-scale pilot carries more weight in executive decision-making than comparative analysis alone. A pilot would also have surfaced implementation friction before it became a scaling problem.</p></div>
+      <div class="reflection-item"><h4>Run a pilot before recommending at scale</h4><p>The TSC and Civil Aviation pilots were already running, but I would have advocated to pause and learn from them explicitly before finalizing the long-term recommendations. In government contexts, evidence from a small-scale pilot carries significantly more weight in executive decision-making than comparative analysis alone. A structured pilot readout would have made the recommendations even harder to push back on - and surfaced implementation friction before it became a scaling problem.</p></div>
+      <div class="reflection-item"><h4>Bring citizens into the research earlier</h4><p>The audit was comprehensive, but it was built from an internal vantage point - what TC's own pages offered citizens, not what citizens actually experienced. Earlier qualitative research with actual service users (rather than program staff) would have surfaced the emotional dimension of navigating 6 clicks to a dead-end contact form in a way that the Excel data alone couldn't capture. The cognitive bias framework helped, but lived experience would have been more powerful in the ED presentation.</p></div>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div><div class="footer-name">Anshika Agarwal</div><div class="footer-contact"><a href="mailto:agarwal.anshika109@gmail.com">agarwal.anshika109@gmail.com</a> · <a href="https://anshikagarwal.com" target="_blank">anshikagarwal.com</a></div></div>
+    <div class="footer-badge">Service Design &amp; UX Research<br>Transport Canada · oneTC Initiative · 20232024</div>
+  </div>
+</footer>
+
 </body>
 </html>
+
